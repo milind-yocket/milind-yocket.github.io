@@ -3,11 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Test Channel</title>
-    <button type="button" onclick="myFunction()">Try it</button>
+    <style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {width: 250px;}
+.button2 {width: 50%;}
+.button3 {width: 100%;}
+
+    </style>
+    <button type="button" onclick="myFunction()" class="button button1">Try it</button>
     <script>
 function myFunction() {
   Print.postMessage('Hello');
 }
+
 
 
     </script>
